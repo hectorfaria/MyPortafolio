@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Bungee+Shade');
+
+:root {
+    --color-first: #672feb;
+    --color-second: #515bf0;
+    --color-react: #23a6d5;
+    --color-ts: #0078D7;
+    --light-first: #faf9f9;
+    --light-second: #f4f2f2;
+    --light-third: #ccc;
+    --grey-first: #333;
+    --grey-second: #777777;
+    --grey-third: #999999;
+    --color-redux: rgb(118, 74, 188);
+    --color-graphql: #e535ab;
+    --color-node: rgb(131, 205, 41);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+    line-height: 1.6;
+    height: 90vh;
+    color: var(--grey-second);
+    background: linear-gradient(-45deg, var(--color-graphql), var(--color-second), var(--color-react), var(--color-node));
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 30s ease infinite;
+    -moz-animation: Gradient 30s ease infinite;
+    animation: Gradient 30s ease infinite;
+
+    @media only screen and (max-width: 450px) {
+        background: linear-gradient(var(--color-react), var(--color-second));
+        background-repeat: no-repeat;
+        background-size: 400% 400%;
+    }
+}
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}

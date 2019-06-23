@@ -1,0 +1,96 @@
+.header {
+	@media only screen and (max-width: 450px) {
+		height: 14vw;
+	}
+
+	@media only screen and (max-width: 539px) {
+		height: 10vw;
+	}
+	height: 14vh;
+	border-radius: 5px;
+	background-color: white;
+	border-bottom: var(--light-third);
+	display: flex;
+	justify-content: flex-start;
+	position: relative;
+  &__main-title {
+    font-family: 'Bungee Shade', monospace;
+    font-weight: 200;
+    font-size: 3vw;
+    position: absolute;
+    flex: 0 1 auto;
+  left: 50%;
+  cursor: default;
+    transform: translateX(-50%);
+    @media only screen and (max-width: 450px) {
+        font-size: 4.5vw;
+    }
+  }
+  &__sub-title {
+    left: 50%;
+    top: 65%;
+    position: absolute;
+    z-index: 1000;
+    font-size: 1.3rem;
+    flex: 0 1 auto;
+    transform: translateX(-50%);
+    cursor: default;
+    @media only screen and (max-width: 450px) {
+      font-size: 1.3rem;
+    }
+    @media only screen and (max-width: 320px) {
+      font-size: 1rem;
+    }
+  }
+}
+
+.user-nav {
+	align-self: stretch;
+	display: flex;
+	align-items: center;
+	flex: 0 1 auto;
+	margin-left: auto;
+
+	a {
+		&:hover {
+			div {
+				transition: all .5s;
+				opacity: 1 !important;
+			}
+		}
+		
+	}
+
+	& > * {
+		cursor: pointer;
+		padding: 0 1.5vw;
+		height: 100%;
+		display: flex;
+		align-items: center;
+
+		&:hover {
+			background-color: var(--light-second);
+			border-top-right-radius: 5px;
+		}
+	}
+
+	&__git {
+		height: 3vh;
+		width: 2.25vw;
+	}
+
+	&__attac {
+		height: 3vh;
+		width: 2.25vw;
+	}
+
+	&__linktext {
+        margin-top: 2.5rem;
+        top: 0.1;
+		position: absolute;
+		color: var(--grey-second);
+		opacity: 0;
+		font-size: .7vw;
+	}
+
+}

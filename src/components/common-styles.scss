@@ -92,3 +92,98 @@ html {
     box-sizing: border-box;
     font-size: 62.5%;
 }
+
+
+.name {
+	display: block;
+	margin: auto;
+	font-size: .8vw;
+	padding: 1%;
+	border: 1px solid var(--grey-second);
+	margin: .5%;
+	border-radius: 2px;
+	@media only screen and (max-width: 450px) {
+		font-size: 1rem;
+	}
+}
+
+
+
+.rainbow:hover {
+	-webkit-animation: rainbow pulsate 1s infinite;
+	-ms-animation: rainbow 1s infinite;
+	-o-animation: rainbow 1s infinite;
+	animation: rainbow 1s infinite;
+}
+
+@-webkit-keyframes rainbow {
+	0% {
+		color: #ee7752;
+	}
+
+	33% {
+		color: #ff3366;
+	}
+
+	66% {
+		color: #23a6d5;
+	}
+
+	100% {
+		color: #30d636;
+	}
+}
+
+@-ms-keyframes rainbow {
+	0% {
+		color: #ee7752;
+	}
+
+	33% {
+		color: #ff3366;
+	}
+
+	66% {
+		color: #23a6d5;
+	}
+
+	100% {
+		color: #30d636;
+	}
+}
+
+@-o-keyframes rainbow {
+	0% {
+		color: #ee7752;
+	}
+
+	33% {
+		color: #ff3366;
+	}
+
+	66% {
+		color: #23a6d5;
+	}
+
+	100% {
+		color: #30d636;
+	}
+}
+
+@keyframes rainbow {
+	0% {
+		color: #ee7752;
+	}
+
+	33% {
+		color: #ff3366;
+	}
+
+	66% {
+		color: #23a6d5;
+	}
+
+	100% {
+		color: #30d636;
+	}
+}

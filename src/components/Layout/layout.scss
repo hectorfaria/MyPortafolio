@@ -1,0 +1,12 @@
+.container {
+	max-width: 85vw;
+	margin: 4vh auto;
+	background-color: var(--light-first);
+	box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+  &__content {
+    display: flex;
+  
+    height: 73vh;
+  }
+}

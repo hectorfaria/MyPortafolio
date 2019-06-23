@@ -1,12 +1,13 @@
-import React from 'react';
-import Layout from '../components/layout';
+import React from 'react'
+import Layout from '../components/Layout'
+import '../components/common-styles.scss'
+import './404.scss'
+import { Link } from 'gatsby'
 
-const NotFoundPage = () => (
-	<Layout>
-
-			<h6 className="rainbow" style={{ fontSize: '40px', textAlign: 'center' , display: 'block', margin: 'auto' }}>Country Roads... Take me Home</h6>
-	
-	</Layout>
-);
-
-export default NotFoundPage;
+export default () => (
+    <Layout>
+        <h6 className="nofound-title rainbow">
+            <Link to="/">Country Roads... Take me Home </Link>
+        </h6>   
+    </Layout>
+)

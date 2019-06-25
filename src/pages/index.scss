@@ -80,16 +80,26 @@ height: fit-content;
   padding: .5%;
   @media only screen and (max-width: 450px) {
     font-size: 5vw;
-  }
+	}
+}	
+&__box {
+	margin-top: 5vh;
+}
+&__subtitle {
+	display: flex;
+	justify-content: space-between;
+	margin: 12px;
+	color: white;
+	font-size: 12px;
+}
+&__container {
+	margin: 30px;
+	font-size: 12px;
 }
 &__stacks {
   margin: 3rem;
   display: flex;
   flex-wrap: nowrap;
-  &--item {
-    margin: 1.5rem;
-  }
-
   h3 {
     @media only screen and (max-width: 375px) {
       font-size: .7rem;
@@ -160,11 +170,6 @@ height: fit-content;
 		}
 	}
 
-	&__icon {
-		width: 4vw;
-		height: 4vh;
-		margin-right: 2%;
-	}
 
 	&__new {
 		color: inherit;

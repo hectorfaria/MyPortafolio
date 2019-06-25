@@ -8,7 +8,7 @@ export default () => {
     return (
         <header className="header">
             <h1 className="header__main-title rainbow">Hector Faria</h1>
-            <h6 className="header__sub-title">Front-End Developer</h6>
+            <h6 className="header__sub-title">Software Developer</h6>
             <nav className="user-nav">
                 <a href="https://github.com/yardiewizardie">
                     <img src={sgithub} className="user-nav__git" alt="Github" />

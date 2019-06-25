@@ -1,0 +1,11 @@
+.stackitem {
+    margin: 1.5rem;
+    &__icon {
+      width: 4vw;
+      height: 4vh;
+      margin-right: 2%;
+    }
+    &__name {
+      color: white;
+    }
+}

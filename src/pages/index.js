@@ -3,7 +3,6 @@ import Layout from '../components/Layout'
 import Typed from 'react-typed'
 import { graphql, StaticQuery } from 'gatsby'
 import { Helmet } from 'react-helmet'
-import Img from 'gatsby-image'
 import nodeicon from '../images/SVG/node.svg'
 import gatsbyicon from '../images/SVG/gatsby.svg'
 import graphqlicon from '../images/SVG/graphql.svg'
@@ -12,7 +11,8 @@ import mongoicon from '../images/SVG/mongodb.svg'
 import sassicon from '../images/SVG/sass.svg'
 import tsicon from '../images/SVG/typescript.svg'
 import reduxicon from '../images/SVG/redux.svg'
-import ProjectContainer from '../components/ProjectContainer';
+import ProjectContainer from '../components/ProjectContainer'
+import StackItem from '../components/StackItem'
 import './index.scss'
 
 const IndexPage = () => (
@@ -75,6 +75,7 @@ const IndexPage = () => (
                                     'I would like to help you',
                                     'I have a fascination for CSS',
                                     'I work with people around the globe',
+                                    // Für Die ALlianz
                                 ]}
                                 typeSpeed={50}
                                 backSpeed={40}
@@ -91,34 +92,46 @@ const IndexPage = () => (
                     <div className="detail">
                         <div className="info-projects">
                             <div className="info-projects__title">Projects</div>
-                            <ProjectContainer name="Kamina" description="
-                                    Webpage travel agency about Colombian nature and Travel packages (Only the
-                                    inplementation of React.js and Redux)." link="https://www.kamina.co" img={data.imageFour.childImageSharp.fluid} stacks={['React','Redux', 'Redux Form']} />
-                            <ProjectContainer name="Norge Nature" description="Webpage travel agency about Norwegian destinations and interesting places." link="http://nature-norge.surge.sh/" img={data.imageOne.childImageSharp.fluid} stacks={["React","BEM", "Redux", "Sass"]}/>
-                            <ProjectContainer  name="Sudookie Movies" description="Personal project of watching movies together with friends." link="https://github.com/yardiewizardie/DookieServerSide" img={data.imageTwo.childImageSharp.fluid} 
-                            stacks={["React", "Mongo", "Node.js", "Express", "Redux", "Sass"]} />
-                            <ProjectContainer name="Fictive" description="Social Media app to connect Tumblr users." link="http://fictive-frontend.surge.sh/" img={data.imageThree.childImageSharp.fluid}
-                             stacks={["React", "BEM", "Redux", "Sass", "Material UI"]} />
+                            <ProjectContainer
+                                name="Kamina"
+                                description="Webpage travel agency about Colombian nature and Travel packages (Only the
+                                    inplementation of React.js and Redux)."
+                                link="https://www.kamina.co"
+                                img={data.imageFour.childImageSharp.fluid}
+                                stacks={['React', 'Redux', 'Redux Form']}
+                            />
+                            <ProjectContainer
+                                name="Norge Nature"
+                                description="Webpage travel agency about Norwegian destinations and interesting places."
+                                link="http://nature-norge.surge.sh/"
+                                img={data.imageOne.childImageSharp.fluid}
+                                stacks={['React', 'BEM', 'Redux', 'Sass']}
+                            />
+                            <ProjectContainer
+                                name="Sudookie Movies"
+                                description="Personal project of watching movies together with friends."
+                                link="https://github.com/yardiewizardie/DookieServerSide"
+                                img={data.imageTwo.childImageSharp.fluid}
+                                stacks={['React', 'Mongo', 'Node.js', 'Express', 'Redux', 'Sass']}
+                            />
+                            <ProjectContainer
+                                name="Fictive"
+                                description="Social Media app to connect Tumblr users."
+                                link="http://fictive-frontend.surge.sh/"
+                                img={data.imageThree.childImageSharp.fluid}
+                                stacks={['React', 'BEM', 'Redux', 'Sass', 'Material UI']}
+                            />
                         </div>
                         <div className="info-container">
                             <div className="info-container__title">Experience</div>
-
-                            <div style={{ marginTop: '5vh' }}>
-                                <div
-                                    style={{
-                                        display: 'flex',
-                                        justifyContent: 'space-between',
-                                        margin: '12px',
-                                        color: 'white',
-                                        fontSize: '12px',
-                                    }}
-                                >
+                            <div className="info-container__box">
+                                <div className="info-container__subtitle">
                                     <h3>Full time Freelancer</h3>
-                                    <span style={{ fontSize: '12px' }}>Present</span>
+                                    <span>Present</span>
                                 </div>
-                                <ul style={{ margin: '30px', fontSize: '12px' }}>
-                                    <li>Attending clients for their needs</li>
-                                    <li>Implementing UX/UI into a maintenable, reusable code</li>
+                                <ul className="info-container__container">
+                                    <li>Attending clients with their needs and working together with them.</li>
+                                    <li>Implementing UX/UI sketchs into a maintenable, reusable code and fast Webpage</li>
                                     <li>Converting HTML/CSS/JS pages into Robust React.js applications</li>
                                     <li>Making Applications from scratch</li>
                                     <li>
@@ -126,18 +139,11 @@ const IndexPage = () => (
                                     </li>
                                     <li>Testing Applications with Jest and Enzyme</li>
                                 </ul>
-                                <div
-                                    style={{
-                                        display: 'flex',
-                                        justifyContent: 'space-between',
-                                        margin: '12px',
-                                        color: 'white',
-                                    }}
-                                >
+                                <div className="info-container__subtitle">
                                     <h3>Front End Dev - Intelli-next C.A</h3>
-                                    <span style={{ fontSize: '10px' }}>Feb 2018 - Dec 2018</span>
+                                    <span>Feb 2018 - Dec 2018</span>
                                 </div>
-                                <ul style={{ margin: '30px', fontSize: '12px' }}>
+                                <ul className="info-container__container">
                                     <li>Building the Front End of a PWA (Progressive Web Application) </li>
                                     <li>Usage of React.js and known libraries such as React Router, React Helmet</li>
                                     <li>Usage of Webpack 4 for bundling files and code splitting</li>
@@ -148,40 +154,16 @@ const IndexPage = () => (
                             </div>
                             <div className="info-container__title">My Stack</div>
                             <div className="info-container__stacks">
-                                <div className="info-container__stacks--item">
-                                    <img src={nodeicon} className="side-nav__icon" alt="" />
-                                    <h3 style={{ color: 'white' }}>Node.js</h3>
-                                </div>
-                                <div className="info-container__stacks--item">
-                                    <img src={gatsbyicon} className="side-nav__icon" alt="" />
-                                    <h3 style={{ color: 'white' }}>Gatsby</h3>
-                                </div>
-                                <div className="info-container__stacks--item">
-                                    <img src={graphqlicon} className="side-nav__icon" alt="" />
-                                    <h3 style={{ color: 'white' }}>GrahpQL</h3>
-                                </div>
-                                <div className="info-container__stacks--item">
-                                    <img src={mongoicon} className="side-nav__icon" alt="" />
-                                    <h3 style={{ color: 'white' }}>MongoDB</h3>
-                                </div>
+                                <StackItem alt="node" icon={nodeicon} name="Node.js" />
+                                <StackItem alt="gatsby" icon={gatsbyicon} name="Gatsby" />
+                                <StackItem alt="graphql" icon={graphqlicon} name="GraphQL" />
+                                <StackItem alt="mongo" icon={mongoicon} name="MongoDB" />
                             </div>
                             <div className="info-container__stacks">
-                                <div className="info-container__stacks--item">
-                                    <img src={reacticon} className="side-nav__icon" alt="" />
-                                    <h3 style={{ color: 'white' }}>React.js</h3>
-                                </div>
-                                <div className="info-container__stacks--item">
-                                    <img src={reduxicon} className="side-nav__icon" alt="" />
-                                    <h3 style={{ color: 'white' }}>Redux</h3>
-                                </div>
-                                <div className="info-container__stacks--item">
-                                    <img src={sassicon} className="side-nav__icon" alt="" />
-                                    <h3 style={{ color: 'white' }}>Sass</h3>
-                                </div>
-                                <div className="info-container__stacks--item">
-                                    <img src={tsicon} className="side-nav__icon" alt="" />
-                                    <h3 style={{ color: 'white' }}>TypeScript</h3>
-                                </div>
+                                <StackItem alt="react" icon={reacticon} name="React.js" />
+                                <StackItem alt="redux" icon={reduxicon} name="Redux" />
+                                <StackItem alt="sass" icon={sassicon} name="Sass" />
+                                <StackItem alt="typescript" icon={tsicon} name="TypeScript" />
                             </div>
                         </div>
                     </div>

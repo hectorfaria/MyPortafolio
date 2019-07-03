@@ -1,10 +1,10 @@
 .header {
 	@media only screen and (max-width: 450px) {
-		height: 14vw;
+		height: 16vw;
 	}
 
 	@media only screen and (max-width: 539px) {
-		height: 10vw;
+		height: 16vw;
 	}
 	height: 14vh;
 	border-radius: 5px;
@@ -75,18 +75,18 @@
 	}
 
 	&__git {
-		height: 3vh;
-		width: 2.25vw;
+		height: 4vh;
+		width: 3.25vw;
 	}
 
 	&__attac {
-		height: 3vh;
-		width: 2.25vw;
+		width: 2vw;
 	}
 
 	&__linktext {
-        margin-top: 2.5rem;
-        top: 0.1;
+		margin-left: .7rem;
+    margin-top: 2.5rem;
+    top: 0.1;
 		position: absolute;
 		color: var(--grey-second);
 		opacity: 0;

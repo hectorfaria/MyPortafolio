@@ -6,7 +6,14 @@
 	border-radius: 5px;
   &__content {
     display: flex;
-  
-    height: 76vh;
-  }
+		height: 76vh;
+		background: red;
+	}
+	@media only screen and (max-width: 450px) {
+		margin: 0;
+		max-width: 100vw;
+		&__content {
+			height: 100vh;
+		}
+	}
 }

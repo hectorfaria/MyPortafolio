@@ -11,16 +11,19 @@ import mongoicon from '../images/SVG/mongodb.svg'
 import sassicon from '../images/SVG/sass.svg'
 import tsicon from '../images/SVG/typescript.svg'
 import reduxicon from '../images/SVG/redux.svg'
+import deleteicon from '../images/SVG/delete.png'
+import stackicon from '../images/SVG/stack.svg'
 import ProjectContainer from '../components/ProjectContainer'
 import StackItem from '../components/StackItem'
 import './index.scss'
 
 class IndexPage extends Component {
     state = {
-        fullSizeProjects: false  
+        fullSizeProjects: false,
     }
 
     render() {
+        const { fullSizeProjects } = this.state;
         return (
             <StaticQuery
                 query={graphql`
@@ -82,7 +85,6 @@ class IndexPage extends Component {
                                             'I have a fascination for CSS 🔮',
                                             'I work with people around the globe 🌎',
                                             'and I play Alliance ⚔️',
-                                            // Für Die ALlianz
                                         ]}
                                         typeSpeed={50}
                                         backSpeed={40}
@@ -100,7 +102,7 @@ class IndexPage extends Component {
                                 </a>
                             </div>
                             <div className="detail">
-                                <div className="info-projects">
+                                <div className={fullSizeProjects ? 'info-projects full-info-projects': 'info-projects' }>
                                     <div className="info-projects__title">Projects</div>
                                     <ProjectContainer
                                         name="Kamina"
@@ -132,7 +134,13 @@ class IndexPage extends Component {
                                         stacks={['React', 'BEM', 'Redux', 'Sass', 'Material UI']}
                                     />
                                 </div>
-                                <div className="info-container">
+                                <button
+                                    className={fullSizeProjects ? 'expand-button expand-hide' : 'expand-button'}
+                                    onClick={() => this.setState({ fullSizeProjects: !fullSizeProjects })}
+                                >
+                                    {fullSizeProjects ? <img style={{ height: '20px' }} src={stackicon} alt="S" />: <img style={{ height: '20px' }} src={deleteicon}  alt="X" />}
+                                </button>
+                                <div className={fullSizeProjects ? 'hide' : 'info-container'}>
                                     <div className="info-container__title">Experience</div>
                                     <div className="info-container__box">
                                         <div className="info-container__subtitle">

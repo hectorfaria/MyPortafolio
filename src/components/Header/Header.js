@@ -1,6 +1,6 @@
 import React from 'react'
 import sgithub from '../../images/SVG/github.svg'
-import sattac from '../../images/SVG/attachment.svg'
+import sattac from '../../images/SVG/cv.png'
 import './header.scss'
 import '../common-styles.scss'
 
@@ -16,7 +16,7 @@ export default () => {
                 </a>
                 <a href="mailto:hector_faria@hotmail.com">
                     <img src={sattac} className="user-nav__attac" alt="Mail Me!" />
-                    <div className="user-nav__linktext">Contact</div>
+                    <div className="user-nav__linktext">CV</div>
                 </a>
             </nav>
         </header>

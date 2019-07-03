@@ -40,9 +40,7 @@ body {
     animation: Gradient 30s ease infinite;
 
     @media only screen and (max-width: 450px) {
-        background: linear-gradient(var(--color-react), var(--color-second));
-        background-repeat: no-repeat;
-        background-size: 400% 400%;
+			background: white;
     }
 }
 
@@ -92,21 +90,6 @@ html {
     box-sizing: border-box;
     font-size: 62.5%;
 }
-
-
-.name {
-	display: block;
-	margin: auto;
-	font-size: .8vw;
-	padding: 1%;
-	border: 1px solid var(--grey-second);
-	margin: .5%;
-	border-radius: 2px;
-	@media only screen and (max-width: 450px) {
-		font-size: 1rem;
-	}
-}
-
 
 
 .rainbow:hover {

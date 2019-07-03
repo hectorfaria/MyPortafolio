@@ -10,7 +10,7 @@ export default ({name, description, link, img, stacks}) => (
             <Img className="info-projects__img" fluid={img} /> 
         </a>
         <div className="info-projects__list">
-            {stacks.map((name, index) =>  <ul key={index} className="name">{name}</ul>)} 
+            {stacks.map((name, index) =>  <ul key={index} className="stack">{name}</ul>)} 
         </div>
     </div>
 )

@@ -3,9 +3,6 @@
 		height: 16vw;
 	}
 
-	@media only screen and (max-width: 539px) {
-		height: 16vw;
-	}
 	height: 14vh;
 	border-radius: 5px;
 	background-color: white;
@@ -19,11 +16,11 @@
     font-size: 3vw;
     position: absolute;
     flex: 0 1 auto;
-  left: 50%;
-  cursor: default;
+		left: 50%;
+    cursor: default;
     transform: translateX(-50%);
     @media only screen and (max-width: 450px) {
-        font-size: 4.5vw;
+        font-size: 5.5vw;
     }
   }
   &__sub-title {
@@ -77,10 +74,18 @@
 	&__git {
 		height: 4vh;
 		width: 3.25vw;
+		@media only screen and (max-width: 539px) {
+			height: 5vw;
+			width: 5vw;
+		}
 	}
 
 	&__attac {
 		width: 2vw;
+		@media only screen and (max-width: 539px) {
+			height: 5vw;
+			width: 5vw;
+		}
 	}
 
 	&__linktext {

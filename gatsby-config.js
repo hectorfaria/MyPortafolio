@@ -7,7 +7,7 @@ module.exports = {
         url: 'https://hectorfaria.info',
         image: 'src/images/favicon.png',
         twitterUsername: '@hideoncookie',
-        siteUrl: 'https://hectorfaria.info',
+        siteUrl: 'https://hectorfaria.com',
     },
     plugins: [
         'gatsby-plugin-react-helmet',
@@ -39,14 +39,8 @@ module.exports = {
         {
             resolve: `gatsby-plugin-google-analytics`,
             options: {
-                trackingId: 'UA-142666619-1',
+                trackingId: 'UA-143261968-1',
                 head: true,
-                anonymize: true,
-                respectDNT: true,
-                exclude: ['/preview/**', '/do-not-track/me/too/'],
-                sampleRate: 5,
-                siteSpeedSampleRate: 10,
-                cookieDomain: 'https://hectorfaria.info',
             },
         },
     ],

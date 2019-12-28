@@ -1,53 +1,53 @@
 {
-  "name": "gatsby-hectorfaria-portafolio",
-  "description": "Hector Faria Portafolio",
-  "version": "1.3.0",
-  "author": "Hector Faria <hector_faria@hotmail.com>",
-  "dependencies": {
-    "gatsby": "^2.9.10",
-    "gatsby-cli": "^2.7.0",
-    "gatsby-image": "^2.2.1",
-    "gatsby-plugin-google-analytics": "^2.1.0",
-    "gatsby-plugin-manifest": "^2.2.0",
-    "gatsby-plugin-offline": "^2.2.0",
-    "gatsby-plugin-react-helmet": "^3.1.0",
-    "gatsby-plugin-robots-txt": "^1.4.0",
-    "gatsby-plugin-sass": "^2.1.0",
-    "gatsby-plugin-sharp": "^2.2.4",
-    "gatsby-plugin-sitemap": "^2.2.0",
-    "gatsby-source-filesystem": "^2.1.0",
-    "gatsby-transformer-sharp": "^2.2.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.1",
-    "react-typed": "^1.1.2"
-  },
-  "keywords": [
-    "portafolio",
-    "hector faria",
-    "developer",
-    "frontend",
-    "css",
-    "sass",
-    "gatsby"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "deploy": "gatsby build && gh-pages -d public -b master",
-    "start": "gatsby develop",
-    "format": "prettier --write \"src/**/*.js\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "devDependencies": {
-    "gh-pages": "^2.0.1",
-    "node-sass": "^4.12.0",
-    "npm-run-all": "^4.1.5",
-    "prettier": "^1.18.2",
-    "sass": "^1.21.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/yardiewizardie/MyPortafolio"
-  }
+	"name": "gatsby-hectorfaria-portafolio",
+	"description": "Hector Faria Portafolio",
+	"version": "1.3.0",
+	"author": "Hector Faria <hector_faria@hotmail.com>",
+	"dependencies": {
+		"gatsby": "^2.18.17",
+		"gatsby-cli": "^2.7.0",
+		"gatsby-image": "^2.2.1",
+		"gatsby-plugin-google-analytics": "^2.1.0",
+		"gatsby-plugin-manifest": "^2.2.34",
+		"gatsby-plugin-offline": "^2.2.0",
+		"gatsby-plugin-react-helmet": "^3.1.0",
+		"gatsby-plugin-robots-txt": "^1.4.0",
+		"gatsby-plugin-sass": "^2.1.0",
+		"gatsby-plugin-sharp": "^2.3.10",
+		"gatsby-plugin-sitemap": "^2.2.0",
+		"gatsby-source-filesystem": "^2.1.0",
+		"gatsby-transformer-sharp": "^2.3.9",
+		"react": "^16.8.6",
+		"react-dom": "^16.8.6",
+		"react-helmet": "^5.2.1",
+		"react-typed": "^1.1.2"
+	},
+	"keywords": [
+		"portafolio",
+		"hector faria",
+		"developer",
+		"frontend",
+		"css",
+		"sass",
+		"gatsby"
+	],
+	"license": "MIT",
+	"scripts": {
+		"build": "gatsby build",
+		"deploy": "gatsby build && gh-pages -d public -b master",
+		"start": "gatsby develop",
+		"format": "prettier --write \"src/**/*.js\"",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"devDependencies": {
+		"gh-pages": "^2.0.1",
+		"node-sass": "^4.12.0",
+		"npm-run-all": "^4.1.5",
+		"prettier": "^1.18.2",
+		"sass": "^1.21.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/yardiewizardie/MyPortafolio"
+	}
 }

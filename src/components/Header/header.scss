@@ -10,35 +10,35 @@
 	display: flex;
 	justify-content: flex-start;
 	position: relative;
-  &__main-title {
-    font-family: 'Bungee Shade', monospace;
-    font-weight: 200;
-    font-size: 3vw;
-    position: absolute;
-    flex: 0 1 auto;
+	&__main-title {
+		font-family: 'Bungee Shade', monospace;
+		font-weight: 200;
+		font-size: 3vw;
+		position: absolute;
+		flex: 0 1 auto;
 		left: 50%;
-    cursor: default;
-    transform: translateX(-50%);
-    @media only screen and (max-width: 450px) {
-        font-size: 5.5vw;
-    }
-  }
-  &__sub-title {
-    left: 50%;
-    top: 65%;
-    position: absolute;
-    z-index: 1000;
-    font-size: 1.3rem;
-    flex: 0 1 auto;
-    transform: translateX(-50%);
-    cursor: default;
-    @media only screen and (max-width: 450px) {
-      font-size: 1.3rem;
-    }
-    @media only screen and (max-width: 320px) {
-      font-size: 1rem;
-    }
-  }
+		cursor: default;
+		transform: translateX(-50%);
+		@media only screen and (max-width: 450px) {
+			font-size: 5.5vw;
+		}
+	}
+	&__sub-title {
+		left: 50%;
+		top: 65%;
+		position: absolute;
+		z-index: 1000;
+		font-size: 1.3rem;
+		flex: 0 1 auto;
+		transform: translateX(-50%);
+		cursor: default;
+		@media only screen and (max-width: 450px) {
+			font-size: 1.3rem;
+		}
+		@media only screen and (max-width: 320px) {
+			font-size: 1rem;
+		}
+	}
 }
 
 .user-nav {
@@ -47,16 +47,6 @@
 	align-items: center;
 	flex: 0 1 auto;
 	margin-left: auto;
-
-	a {
-		&:hover {
-			div {
-				transition: all .5s;
-				opacity: 1 !important;
-			}
-		}
-		
-	}
 
 	& > * {
 		cursor: pointer;
@@ -90,12 +80,11 @@
 
 	&__linktext {
 		margin-left: .7rem;
-    margin-top: 2.5rem;
-    top: 0.1;
+		margin-top: 2.5rem;
+		top: 0.1;
 		position: absolute;
 		color: var(--grey-second);
-		opacity: 0;
+		opacity: 1;
 		font-size: .7vw;
 	}
-
 }

@@ -1,0 +1,11 @@
+version: '2.1'
+services:
+  app:
+    build: .
+    ports:
+      - '8000:8000'
+      - '9000:9000'
+    volumes:
+      - /var/www/node_modules
+      - ./public:/var/www/public
+    command: bash -c "yarn add sharp gatsby-transformer-yaml --build-from-source && yarn run build"

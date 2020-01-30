@@ -60,7 +60,8 @@ class IndexPage extends Component {
 				`}
 				render={(data) => (
 					<Layout>
-						<Helmet>
+						
+                        <Helmet>
 							<html lang="en" />
 							<meta name="theme-color" content="#ffffff" />
 							<meta

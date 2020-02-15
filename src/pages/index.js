@@ -60,8 +60,7 @@ class IndexPage extends Component {
 				`}
 				render={(data) => (
 					<Layout>
-						
-                        <Helmet>
+						<Helmet>
 							<html lang="en" />
 							<meta name="theme-color" content="#ffffff" />
 							<meta
@@ -73,7 +72,7 @@ class IndexPage extends Component {
 							<meta property="og:site_name" content="Hector Faria" />
 							<meta property="og:image" content="https://i.imgur.com/eJimocb.png" />
 						</Helmet>
-						<main className="review">
+						<main className={localStorage.getItem('retro') ? 'review review-retro' : 'review'}>
 							<div className="code-container">
 								<span>
 									Hi!, My name is <b>Hector Faria, </b>

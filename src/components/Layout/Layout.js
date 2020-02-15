@@ -25,7 +25,7 @@ const Layout = ({ children }) => (
                         { name: 'keywords', content: 'sample, something' },
                     ]}
                 />
-                <div className={localStorage.getItem('retro') ? "container inner": 'container'}>
+                <div className='container'>
                     <Header />
                     <div className="container__content feed">{children}</div>
                 </div>

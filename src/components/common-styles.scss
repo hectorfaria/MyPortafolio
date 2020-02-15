@@ -33,6 +33,13 @@ body {
   line-height: 1.6;
   height: 90vh;
   color: var(--grey-second);
+  background: linear-gradient(
+    -45deg,
+    var(--color-graphql),
+    var(--color-second),
+    var(--color-react),
+    var(--color-node)
+  );
   background-size: 400% 400%;
   -webkit-animation: Gradient 30s ease infinite;
   -moz-animation: Gradient 30s ease infinite;

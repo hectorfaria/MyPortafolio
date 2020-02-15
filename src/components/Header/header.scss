@@ -1,370 +1,132 @@
 @mixin ch {
-  background-color: white;
-  background-image: linear-gradient(
-      45deg,
-      lighten(lighten(#c5c1c6, 2%), 15%) 25%,
-      transparent 25%,
-      transparent 75%,
-      lighten(lighten(#c5c1c6, 2%), 15%) 75%,
-      lighten(lighten(#c5c1c6, 2%), 15%)
-    ),
-    linear-gradient(
-      45deg,
-      lighten(lighten(#c5c1c6, 2%), 15%) 25%,
-      transparent 25%,
-      transparent 75%,
-      lighten(lighten(#c5c1c6, 2%), 15%) 75%,
-      lighten(lighten(#c5c1c6, 2%), 15%)
-    );
-  background-size: 2px 2px;
-  background-position: 0 0, 1px 1px;
+	background-color: white;
+	background-image: linear-gradient(
+			45deg,
+			lighten(lighten(#c5c1c6, 2%), 15%) 25%,
+			transparent 25%,
+			transparent 75%,
+			lighten(lighten(#c5c1c6, 2%), 15%) 75%,
+			lighten(lighten(#c5c1c6, 2%), 15%)
+		),
+		linear-gradient(
+			45deg,
+			lighten(lighten(#c5c1c6, 2%), 15%) 25%,
+			transparent 25%,
+			transparent 75%,
+			lighten(lighten(#c5c1c6, 2%), 15%) 75%,
+			lighten(lighten(#c5c1c6, 2%), 15%)
+		);
+	background-size: 2px 2px;
+	background-position: 0 0, 1px 1px;
 }
 
 .header {
-  @media only screen and (max-width: 450px) {
-    height: 16vw;
-  }
+	@media only screen and (max-width: 450px) {
+		height: 16vw;
+	}
 
-  height: 14vh;
-  border-radius: 5px;
-  background-color: white;
-  border-bottom: var(--light-third);
-  display: flex;
-  justify-content: flex-start;
-  position: relative;
-  &__main-title {
-    font-family: 'Bungee Shade', monospace;
-    font-weight: 200;
-    font-size: 3vw;
-    position: absolute;
-    flex: 0 1 auto;
-    left: 50%;
-    cursor: default;
-    transform: translateX(-50%);
-    @media only screen and (max-width: 450px) {
-      font-size: 5.5vw;
-    }
-  }
-  &__sub-title {
-    left: 50%;
-    top: 65%;
-    position: absolute;
-    z-index: 1000;
-    font-size: 1.3rem;
-    flex: 0 1 auto;
-    transform: translateX(-50%);
-    cursor: default;
-    @media only screen and (max-width: 450px) {
-      font-size: 1.3rem;
-    }
-    @media only screen and (max-width: 320px) {
-      font-size: 1rem;
-    }
-  }
-  button {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 22px;
-    border: 0;
-    padding: 0 6px 1px;
-    margin: 30px;
-    background: lighten(#c5c1c6, 2%);
-    animation: glowing 1500ms infinite;
-    box-shadow: inset -1px -1px 0 0 darken(#c5c1c6, 50%),
-      inset 1px 1px 0 0 white, inset -2px -2px 0 0 darken(#c5c1c6, 15%),
-      inset 2px 2px 0 0 lighten(#c5c1c6, 10%);
-    &:active {
-      @include ch;
-      box-shadow: inset -1px -1px 0 0 white,
-        inset 1px 1px 0 0 darken(#c5c1c6, 50%),
-        inset -2px -2px 0 0 lighten(#c5c1c6, 10%),
-        inset 2px 2px 0 0 lighten(#c5c1c6, 2%);
-      color: darken(#c5c1c6, 50%);
-    }
-  }
+	height: 14vh;
+	border-radius: 5px;
+	background-color: white;
+	border-bottom: var(--light-third);
+	display: flex;
+	justify-content: flex-start;
+	position: relative;
+	&__main-title {
+		font-family: 'Bungee Shade', monospace;
+		font-weight: 200;
+		font-size: 3vw;
+		position: absolute;
+		flex: 0 1 auto;
+		left: 50%;
+		cursor: default;
+		transform: translateX(-50%);
+		@media only screen and (max-width: 450px) {
+			font-size: 5.5vw;
+		}
+	}
+	&__sub-title {
+		left: 50%;
+		top: 65%;
+		position: absolute;
+		z-index: 1000;
+		font-size: 1.3rem;
+		flex: 0 1 auto;
+		transform: translateX(-50%);
+		cursor: default;
+		@media only screen and (max-width: 450px) {
+			font-size: 1.3rem;
+		}
+		@media only screen and (max-width: 320px) {
+			font-size: 1rem;
+		}
+	}
+	button {
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 22px;
+		border: 0;
+		padding: 0 6px 1px;
+		margin: 30px;
+		background: lighten(#c5c1c6, 2%);
+		animation: glowing 1500ms infinite;
+		box-shadow: inset -1px -1px 0 0 darken(#c5c1c6, 50%), inset 1px 1px 0 0 white,
+			inset -2px -2px 0 0 darken(#c5c1c6, 15%), inset 2px 2px 0 0 lighten(#c5c1c6, 10%);
+		&:active {
+			@include ch;
+			box-shadow: inset -1px -1px 0 0 white, inset 1px 1px 0 0 darken(#c5c1c6, 50%),
+				inset -2px -2px 0 0 lighten(#c5c1c6, 10%), inset 2px 2px 0 0 lighten(#c5c1c6, 2%);
+			color: darken(#c5c1c6, 50%);
+		}
+	}
 }
 
 .user-nav {
-  align-self: stretch;
-  display: flex;
-  align-items: center;
-  flex: 0 1 auto;
-  margin-left: auto;
+	align-self: stretch;
+	display: flex;
+	align-items: center;
+	flex: 0 1 auto;
+	margin-left: auto;
 
-  & > * {
-    cursor: pointer;
-    padding: 0 1.5vw;
-    height: 100%;
-    display: flex;
-    align-items: center;
+	& > * {
+		cursor: pointer;
+		padding: 0 1.5vw;
+		height: 100%;
+		display: flex;
+		align-items: center;
 
-    &:hover {
-      background-color: var(--light-second);
-      border-top-right-radius: 5px;
-    }
-  }
+		&:hover {
+			background-color: var(--light-second);
+			border-top-right-radius: 5px;
+		}
+	}
 
-  &__git {
-    height: 4vh;
-    width: 3.25vw;
-    @media only screen and (max-width: 539px) {
-      height: 5vw;
-      width: 5vw;
-    }
-  }
+	&__git {
+		height: 4vh;
+		width: 3.25vw;
+		@media only screen and (max-width: 539px) {
+			height: 5vw;
+			width: 5vw;
+		}
+	}
 
-  &__attac {
-    width: 2vw;
-    @media only screen and (max-width: 539px) {
-      height: 5vw;
-      width: 5vw;
-    }
-  }
+	&__attac {
+		width: 2vw;
+		@media only screen and (max-width: 539px) {
+			height: 5vw;
+			width: 5vw;
+		}
+	}
 
-  &__linktext {
-    margin-left: 0.7rem;
-    margin-top: 2.5rem;
-    top: 0.1;
-    position: absolute;
-    color: var(--grey-second);
-    opacity: 1;
-    font-size: 0.7vw;
-  }
+	&__linktext {
+		margin-left: 0.7rem;
+		margin-top: 2.5rem;
+		top: 0.1;
+		position: absolute;
+		color: var(--grey-second);
+		opacity: 1;
+		font-size: 0.7vw;
+	}
 }
-
-@keyframes glowing {
-  0% {
-    box-shadow: inset -1px -1px 0 0 darken(#c5c1c6, 50%),
-      inset 1px 1px 0 0 white, inset -2px -2px 0 0 darken(#c5c1c6, 15%),
-      inset 2px 2px 0 0 lighten(#c5c1c6, 10%);
-  }
-  50% {
-    box-shadow: inset -1px -1px 0 0 white,
-      inset 1px 1px 0 0 darken(#c5c1c6, 50%),
-      inset -2px -2px 0 0 lighten(#c5c1c6, 10%),
-      inset 2px 2px 0 0 lighten(#c5c1c6, 2%);
-    color: darken(#c5c1c6, 50%);
-  }
-  100% {
-    box-shadow: inset -1px -1px 0 0 darken(#c5c1c6, 50%),
-      inset 1px 1px 0 0 white, inset -2px -2px 0 0 darken(#c5c1c6, 15%),
-      inset 2px 2px 0 0 lighten(#c5c1c6, 10%);
-  }
-}
-
-// RETRO MODE
-.bar {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: space-between;
-  height: 18px;
-  padding: 2px;
-  background: #000080;
-  color: white;
-  h1 {
-    text-align: start;
-    padding: 0 0 1px 3px;
-    font-size: 12px;
-    margin: 2px;
-    margin-top: 4px;
-    font-family: 'MS Sans Serif', sans-serif;
-  }
-  .buttons {
-    display: flex;
-    a {
-      color: darken(#c5c1c6, 50%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      margin-left: 2px;
-      width: 14px;
-      height: 14px;
-      padding: 0;
-      padding-bottom: 10px;
-      border: 0;
-      background: lighten(#c5c1c6, 2%);
-      box-shadow: inset -1px -1px 0 0 darken(#c5c1c6, 50%),
-        inset 1px 1px 0 0 white, inset -2px -2px 0 0 darken(#c5c1c6, 15%),
-        inset 2px 2px 0 0 lighten(#c5c1c6, 10%);
-      &:active {
-        color: darken(#c5c1c6, 50%);
-      }
-      &.minimize {
-        &:after {
-          content: '';
-          display: block;
-          position: absolute;
-          bottom: 3px;
-          left: 4px;
-          width: 6px;
-          height: 2px;
-          background: darken(#c5c1c6, 50%);
-        }
-      }
-      &.maximize {
-        &:after {
-          content: '';
-          display: block;
-          position: absolute;
-          top: 3px;
-          left: 3px;
-          width: 8px;
-          height: 8px;
-          border: 1px solid darken(#c5c1c6, 50%);
-          border-top-width: 2px;
-        }
-      }
-      &.close {
-        &:before,
-        &:after {
-          transform-origin: center center;
-          content: '';
-          display: block;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          margin-top: -4px;
-          margin-left: -1px;
-          width: 2px;
-          height: 8px;
-          background: darken(#c5c1c6, 50%);
-        }
-        &:before {
-          transform: rotateZ(-45deg);
-        }
-        &:after {
-          transform: rotateZ(45deg);
-        }
-      }
-    }
-  }
-}
-
-.menu {
-  background: lighten(#c5c1c6, 2%);
-  ul {
-    display: flex;
-    padding: 1px 0;
-  }
-  a,
-  button {
-    cursor: pointer;
-    display: block;
-    border: none;
-    background-color: inherit;
-    font-size: 14px;
-    padding: 2px 6px 2px;
-    color: darken(#c5c1c6, 50%);
-    text-decoration: none;
-    font-family: 'Helvetica', sans-serif;
-    height: 100%;
-    &:first-letter {
-      text-decoration: underline;
-    }
-    &:active {
-      background: #000080;
-      color: white;
-    }
-    &:hover {
-      background: #000080;
-      color: white;
-    }
-  }
-}
-
-hr {
-  border-left: 0;
-  border-right: 0;
-  border-top-color: darken(#c5c1c6, 15%);
-  border-bottom-color: lighten(#c5c1c6, 10%);
-  border-style: solid;
-  margin: 0;
-  background: none;
-  width: 100%;
-}
-
-//scrollbar
-$up: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGklEQVR4AWMYxuA/SYphmETFhDX9x4mHGQAAcL4P8dQiMq8AAAAASUVORK5CYII=';
-$dn: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAAF0lEQVQY02NgoBf4jwJxSOHQhcNAOgMAWWAP8Rv2U3UAAAAASUVORK5CYII=';
-$lt: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAAHklEQVQY02NgoBT8xyX8H5fwf1zCpOjAYwceV1EEAAO2D/HsQ4vsAAAAAElFTkSuQmCC';
-$rt: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAAHUlEQVQY02NgIB/8xy3xH7fEf9wS/0nUQZqrKAYAK44P8ZRmzLQAAAAASUVORK5CYII=';
-$re: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAN0lEQVR4Ae3MgQUAMBRDwU5fFF05lb/CARTBw2Ulof0DxPtcwp3hNuEYnjbcEW4TjuFpwx3h9gMWGgZ2Y/PT2gAAAABJRU5ErkJggg==';
-
-// ::-webkit-scrollbar {
-//   width: 16px;
-//   height: 16px;
-// }
-// ::-webkit-scrollbar-track {
-//   @include ch;
-// }
-// ::-webkit-scrollbar-thumb {
-//   box-shadow: inset -1px -1px 0 0 darken(#c5c1c6, 50%),
-//     inset 1px 1px 0 0 lighten(#c5c1c6, 2%),
-//     inset -2px -2px 0 0 darken(#c5c1c6, 15%), inset 2px 2px 0 0 white;
-//   width: 16px;
-//   height: 16px;
-//   background-color: lighten(#c5c1c6, 2%);
-//   z-index: 1;
-// }
-// ::-webkit-scrollbar-corner {
-//   background-color: lighten(#c5c1c6, 2%);
-// }
-// ::-webkit-resizer {
-//   width: 16px;
-//   height: 16px;
-//   background-color: lighten(#c5c1c6, 2%);
-//   background-image: url($re);
-//   background-position: bottom right;
-//   background-repeat: no-repeat;
-//   image-rendering: pixelated;
-// }
-// ::-webkit-scrollbar-button {
-//   box-shadow: inset -1px -1px 0 0 darken(#c5c1c6, 50%),
-//     inset 1px 1px 0 0 lighten(#c5c1c6, 2%),
-//     inset -2px -2px 0 0 darken(#c5c1c6, 15%), inset 2px 2px 0 0 white;
-//   display: block;
-//   width: 16px;
-//   height: 16px;
-//   background-color: lighten(#c5c1c6, 2%);
-//   image-rendering: pixelated;
-//   background-repeat: no-repeat;
-//   background-position: 65% center;
-//   &:active {
-//     background-position: 2px 2px;
-//   }
-//   &:horizontal:decrement {
-//     background-image: url($lt);
-//   }
-//   &:horizontal:increment {
-//     background-image: url($rt);
-//   }
-//   &:vertical:decrement {
-//     background-image: url($up);
-//   }
-//   &:vertical:increment {
-//     background-image: url($dn);
-//   }
-//   &:horizontal:increment:start {
-//     display: none;
-//   }
-//   &:horizontal:decrement:end {
-//     display: none;
-//   }
-//   &:vertical:increment:start {
-//     display: none;
-//   }
-//   &:vertical:decrement:end {
-//     display: none;
-//   }
-//   &:active {
-//     border-top: 1px solid darken(#c5c1c6, 15%);
-//     border-left: 1px solid darken(#c5c1c6, 15%);
-//     border-bottom: 1px solid darken(#c5c1c6, 15%);
-//     border-right: 1px solid darken(#c5c1c6, 15%);
-//     box-shadow: none;
-//   }
-// }

@@ -1,18 +1,22 @@
 import React, { Component } from 'react';
 import Layout from '../components/Layout';
-import Typed from 'react-typed';
 import { graphql, StaticQuery } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import nodeicon from '../images/SVG/node.svg';
 import gatsbyicon from '../images/SVG/gatsby.svg';
 import graphqlicon from '../images/SVG/graphql.svg';
 import reacticon from '../images/SVG/react.svg';
-import mongoicon from '../images/SVG/mongodb.svg';
 import sassicon from '../images/SVG/sass.svg';
 import tsicon from '../images/SVG/typescript.svg';
 import reduxicon from '../images/SVG/redux.svg';
 import deleteicon from '../images/SVG/delete.png';
 import stackicon from '../images/SVG/stack.svg';
+import dockericon from '../images/SVG/docker.svg';
+import ethericon from '../images/SVG/ethereum.svg';
+import goicon from '../images/SVG/go.svg';
+import jesticon from '../images/SVG/jest.svg';
+import nexticon from '../images/SVG/next-dot-js.svg';
+import travisicon from '../images/SVG/travisci.svg';
 import ProjectContainer from '../components/ProjectContainer';
 import StackItem from '../components/StackItem';
 import './index.scss';
@@ -74,23 +78,19 @@ class IndexPage extends Component {
 						</Helmet>
 						<main className={localStorage.getItem('retro') ? 'review review-retro' : 'review'}>
 							<div className="code-container">
-								<span>
-									Hi!, My name is <b>Hector Faria, </b>
-									<Typed
-										strings={[
-											'and I am a Software Developer 👋',
-											'I am in love with JavaScript 💻',
-											'I like learning new technologies 🤯',
-											'I would like to help you ☄️️',
-											'I have a fascination for CSS 🔮',
-											'I work with people around the globe 🌎',
-											'and I play Alliance ⚔️'
-										]}
-										typeSpeed={50}
-										backSpeed={40}
-										loop
-									/>
-								</span>
+								<StackItem alt="react" icon={reacticon} name="React.js" />
+								<StackItem alt="redux" icon={reduxicon} name="Redux" />
+								<StackItem alt="sass" icon={sassicon} name="Sass" />
+								<StackItem alt="typescript" icon={tsicon} name="TypeScript" />
+								<StackItem alt="node" icon={nodeicon} name="Node.js" />
+								<StackItem alt="gatsby" icon={gatsbyicon} name="Gatsby" />
+								<StackItem alt="graphql" icon={graphqlicon} name="GraphQL" />
+								<StackItem alt="docker" icon={dockericon} name="Docker" />
+								<StackItem alt="ether" icon={ethericon} name="Solidity" />
+								<StackItem alt="go" icon={goicon} name="Golang" />
+								<StackItem alt="jest" icon={jesticon} name="Jest" />
+								<StackItem alt="next" icon={nexticon} name="Next.js" />
+								<StackItem alt="travis" icon={travisicon} name="TravisCI" />
 							</div>
 							<div className="code-container__contact">
 								Interested in working with me?{' '}
@@ -181,19 +181,6 @@ class IndexPage extends Component {
 											<li>Unit and Integration Testing with Jest and Enzyme</li>
 											<li>Using CSS Preprocessors like Post-CSS and Sass</li>
 										</ul>
-									</div>
-									<div className="info-container__title">My Stack</div>
-									<div className="info-container__stacks">
-										<StackItem alt="node" icon={nodeicon} name="Node.js" />
-										<StackItem alt="gatsby" icon={gatsbyicon} name="Gatsby" />
-										<StackItem alt="graphql" icon={graphqlicon} name="GraphQL" />
-										<StackItem alt="mongo" icon={mongoicon} name="MongoDB" />
-									</div>
-									<div className="info-container__stacks">
-										<StackItem alt="react" icon={reacticon} name="React.js" />
-										<StackItem alt="redux" icon={reduxicon} name="Redux" />
-										<StackItem alt="sass" icon={sassicon} name="Sass" />
-										<StackItem alt="typescript" icon={tsicon} name="TypeScript" />
 									</div>
 								</div>
 							</div>

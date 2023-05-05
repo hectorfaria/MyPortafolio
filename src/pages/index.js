@@ -111,28 +111,25 @@ class IndexPage extends Component {
 										description="Webpage travel agency about Colombian nature and Travel packages (Only the
                                     inplementation of React.js and Redux)."
 										link="https://www.kamina.co"
-										img={data.imageFour.childImageSharp.fluid}
 										stacks={[ 'React', 'Redux', 'Redux Form' ]}
 									/>
 									<ProjectContainer
 										name="Norge Nature"
 										description="Webpage travel agency about Norwegian destinations and interesting places."
 										link="http://nature-norge.surge.sh/"
-										img={data.imageOne.childImageSharp.fluid}
 										stacks={[ 'React', 'BEM', 'Redux', 'Sass' ]}
 									/>
 									<ProjectContainer
 										name="Sudookie Movies"
 										description="Personal project of watching movies together with friends."
 										link="https://github.com/yardiewizardie/DookieServerSide"
-										img={data.imageTwo.childImageSharp.fluid}
+										
 										stacks={[ 'React', 'Mongo', 'Node.js', 'Express', 'Redux', 'Sass' ]}
 									/>
 									<ProjectContainer
 										name="Fictive"
 										description="Social Media app to connect Tumblr users."
 										link="http://fictive-frontend.surge.sh/"
-										img={data.imageThree.childImageSharp.fluid}
 										stacks={[ 'React', 'BEM', 'Redux', 'Sass', 'Material UI' ]}
 									/>
 								</div>
